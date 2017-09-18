@@ -2,7 +2,6 @@ package com.dong.coolweather.db;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.CrossProcessCursor;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
