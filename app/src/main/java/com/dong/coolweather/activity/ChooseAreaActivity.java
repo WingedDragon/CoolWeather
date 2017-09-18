@@ -1,12 +1,8 @@
 package com.dong.coolweather.activity;
 
 import android.app.Activity;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
@@ -143,7 +139,7 @@ public class ChooseAreaActivity extends Activity {
 					result = Utility.handleProvincesResponse(coolWeatherDB,response);
 				}else if("city".equals(type)){
 					result = Utility.handleCitiesResponse(coolWeatherDB,response,selectedProvince.getId());
-				}else if("county".equals(type)){
+				}else if("country".equals(type)){
 					result = Utility.handleCountriesResponse(coolWeatherDB,response,selectedCity.getId());
 				}
 
